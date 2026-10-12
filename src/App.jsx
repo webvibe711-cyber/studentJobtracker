@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import Jobs from './pages/Jobs.jsx';
 import AddApplication from './pages/AddApplication.jsx';
 import Applications from './pages/Applications.jsx';
+import Login from './pages/Login.jsx';
 
 const STORAGE_KEY = 'student-job-tracker-applications';
 
@@ -64,6 +65,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home jobCount={10} applicationCount={applications.length} />} />
           <Route path="/jobs" element={<Jobs />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/add-application" element={<AddApplication onAdd={addApplication} />} />
           <Route
             path="/applications"
